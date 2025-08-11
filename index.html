@@ -55,7 +55,7 @@
         width: min(92vw, var(--overlayMaxWidth));
         padding: var(--overlayPad);
         border-radius: 14px;
-        box-shadow: 0 12px 28px rgba(0,0,0,.3);
+        box-shadow: 0 12px 28px rgba(0,0,0,.8);
         text-align: center;
         font: 500 var(--overlayFont)/1.45 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
         position: relative;
@@ -79,6 +79,10 @@
       }
       .notice-close:hover{ background: rgba(255,255,255,.28); }
       .notice-close:focus{ outline: 2px solid rgba(255,255,255,.6); outline-offset: 2px; }
+
+      .white-text {
+        color: white;
+      }
 
       @media (max-width: 360px){
         .notice-box{ padding: clamp(10px, 3vw, 18px); }
@@ -105,7 +109,9 @@
         The official launch is scheduled for the end of October 2025. 
         In the meantime, feel free to <a href="https://hooshtechllc.com/index.html#contact-us">Contact Us</a> for a personalized demo or to ask any questions —
         we’d love to hear from you.<br>
-        Explore all features of the product at the <a href="https://hooshtechllc.com">Hoosh Tech LLC</a> website.
+		<span class="white-text">
+		    Explore all features of the product at the <a href="https://hooshtechllc.com">Hoosh Tech LLC</a> website.
+		</span>
     </div>
   </div>
 
@@ -120,6 +126,7 @@
 
 </body>
 </html>
+
 
 
 
